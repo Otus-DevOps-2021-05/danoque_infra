@@ -10,7 +10,8 @@ users:
     - default
     - name: ubuntu
       shell: /bin/bash
-        
+      ssh-authorized-keys:
+          - "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDkYbptj3i+nkp5zexTjhgHI7C6RsZhfqhGO1XQArXhEJVCtRgYcJjr+hCaNCNXxeGzW3Ad/eVHc8clUMlCn3Qf2FOTKaVUr7eibBb/qLvmbpwY9Z7F5cEwDQGV9tYlGDihotSWNa38oRLx6lKfXcr2IPllRqWjVpB5Idrh6D/lPHIDIeyHBh6ZWSc4jPqkXfxoKo1Fo4SF6fKUNMFZ+KhlcjzxkZM40oxewm+Aorf1lzCWx4/8SXyCvInl2HG0WRIDyI6mRV958rMe2ctsmF9BFcH9aOkqy2JMQA77nw1+bnry1Q0o6mPmBf6mYU4efrZHq0BXwoPnHEgJFmm3xM0z daniil@daniil"      
 runcmd:
     - wget https://gist.githubusercontent.com/danoque/ea6526ef513cfc262ddc2c4efe4ba325/raw/51ab1109e3f9c94d743deb42231cf732589b1bc5/install_ruby.sh
     - wget https://gist.githubusercontent.com/danoque/005d02007c34b556790052f422c086d4/raw/15bcbdb5e72ef28851e260b5651a6df67bfff33e/install_mongodb.sh
