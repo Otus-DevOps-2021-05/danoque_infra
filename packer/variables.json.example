@@ -1,0 +1,6 @@
+{
+        "service_account_key_file": "/home/daniil/HOMEWORK_OTUS/OTUS/PACKER/key.json",
+        "folder_id": "b2gj54rj55fg28gavzj1",
+        "subnet_id": "vjbm5ti7l2adff5cslj7",
+        "source_image_id": "2fdbnthafsa16fnvc457"
+}
