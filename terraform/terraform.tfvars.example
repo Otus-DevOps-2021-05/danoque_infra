@@ -1,0 +1,8 @@
+token           = "VVVVAAAV8ifgrtTuwhgbvc45-4gfc4-jh6gvcx2"
+cloud_id        = "123dsxcgfvfa6dqg4fds"
+folder_id       = "76123dcvfd2qp973456g"
+zone            = "ru-central1-a"
+image_id        = "fd87i7d4sm7gba4qlp0k"
+public_key_path = "~/.ssh/id_rsa.pub"
+subnet_id       = "e9bm5oi7lfrbgi24psn4"
+private         = "~/.ssh/id_rsa2"
