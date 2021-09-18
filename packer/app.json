@@ -1,33 +1,22 @@
 {
-    "variables": {
-          "key_file": "key.json",
-          "folder_id": "fderfghbvcl5tfghjkfk",
-          "image_id": "ubuntu-1604-lts",
-          "subnet_id": "e9bm5oi7lfrbgi24psn4"
-          },
-
-    "builders": [
-        {
-            "type": "yandex",
-            "service_account_key_file": "{{user `key_file`}}",
-            "folder_id": "{{user `folder_id`}}",
-            "zone":      "ru-central1-a",
-
-            "source_image_family": "ubuntu-1604-lts",
-            "image_name": "reddit-app-base-{{timestamp}}",
-            "image_family": "reddit-app-base",
-
-            "subnet_id": "{{user `subnet_id`}}",
-            "use_ipv4_nat": true,
-
-            "ssh_username": "ubuntu",
-            "platform_id": "standard-v1"
-        }
-    ],
-    "provisioners": [
-        {
-            "type": "ansible",
-            "playbook_file": "ansible/packer_app.yml"
-        }
-    ]
+  "builders": [
+    {
+      "type": "yandex",
+      "service_account_key_file": "{{user `key`}}",
+      "folder_id": "{{user `folder_id`}}",
+      "source_image_family": "{{user `image`}}",
+      "image_name": "reddit-base-{{timestamp}}",
+      "image_family": "reddit-base",
+      "ssh_username": "ubuntu",
+      "platform_id": "standard-v2",
+      "zone": "ru-central1-a",
+      "use_ipv4_nat": true
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "ansible",
+      "playbook_file": "ansible/packer_app.yml"
+    }
+  ]
 }
