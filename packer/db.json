@@ -1,4 +1,12 @@
 {
+    
+    "variables": {
+          "key_file": "",
+          "folder_id": "",
+          "image_id": "",
+          "subnet_id": ""
+          },
+    
     "builders": [
         {
             "token": "{{user `token`}}",
