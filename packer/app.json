@@ -1,9 +1,9 @@
 {
     "variables": {
-          "key_file": "",
-          "folder_id": "",
-          "image_id": "",
-          "subnet_id": ""
+          "key_file": "key.json",
+          "folder_id": "fderfghbvcl5tfghjkfk",
+          "image_id": "ubuntu-1604-lts",
+          "subnet_id": "e9bm5oi7lfrbgi24psn4"
           },
 
     "builders": [
